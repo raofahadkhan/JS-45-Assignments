@@ -1,9 +1,12 @@
-function make_album(namee, title, NumOfTracks = 4) {
+function make_album(namee, title, NumOfTracks = 0) {
   const album = {
     artist_name: namee,
     album_title: title,
-    NoOfTracks: NumOfTracks,
+    // NoOfTracks: NumOfTracks,
   };
+  if (NumOfTracks) {
+    album["NoOfTracks"] = NumOfTracks;
+  }
   return album;
 }
 
