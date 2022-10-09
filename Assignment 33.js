@@ -8,6 +8,6 @@ ordinalNumbers.map((num) => {
   } else if (num == 3) {
     console.log("3rd");
   } else {
-    console.log(num.toString() + "th");
+    console.log(num.toString() + "th ");
   }
 });
